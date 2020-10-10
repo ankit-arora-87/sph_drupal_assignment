@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.profile_informatio
+    - field.field.node.author.body
+    - field.field.node.author.field_designation
+    - field.field.node.author.field_e_mail_address
+    - field.field.node.author.field_profile_photo
+    - image.style.profile_photo_thumbnail
+    - node.type.author
+  module:
+    - image
+    - user
+id: node.author.profile_informatio
+targetEntityType: node
+bundle: author
+mode: profile_informatio
+content:
+  field_e_mail_address:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_profile_photo:
+    weight: 2
+    label: above
+    settings:
+      image_style: profile_photo_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_designation: true
