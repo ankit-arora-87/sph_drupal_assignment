@@ -28,7 +28,7 @@ content:
     weight: 0
     label: above
     settings:
-      view_mode: teaser
+      view_mode: profile_informatio
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
