@@ -13,5 +13,5 @@ To create installation profile for SPH Tech Blog
      - DB PASSWORD
      - HOSTNAME
      - PORT
-   - Setting Up... **All modules & configuratio will be installed**
+   - Setting Up... **All modules & configurations will be installed**
    - Provide appropriate site information to prepare site to be used by admin user
