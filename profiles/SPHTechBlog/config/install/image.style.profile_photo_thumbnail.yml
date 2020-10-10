@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.profile_photo
+  module:
+    - crop
+name: profile_photo_thumbnail
+label: 'Profile Photo Thumbnail'
+effects:
+  41018e97-0df5-42af-a32a-e8f996d23807:
+    uuid: 41018e97-0df5-42af-a32a-e8f996d23807
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: profile_photo
+  0dea5aec-0480-4f24-b947-3c2c5ea74e5a:
+    uuid: 0dea5aec-0480-4f24-b947-3c2c5ea74e5a
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 60
+      height: 70
+      anchor: center-center

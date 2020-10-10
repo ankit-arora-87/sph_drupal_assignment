@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: profile_photo
+label: 'Profile Photo'
+description: ''
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 60
+hard_limit_height: 70

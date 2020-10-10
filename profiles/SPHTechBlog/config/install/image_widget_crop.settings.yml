@@ -1,0 +1,13 @@
+settings:
+  library_url: 'https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.js'
+  css_url: 'https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.css'
+  crop_preview_image_style: profile_photo_thumbnail
+  crop_list:
+    profile_photo: profile_photo
+  crop_types_required:
+    profile_photo: profile_photo
+  warn_multiple_usages: false
+  show_default_crop: true
+  notify_apply: false
+  notify_update: true
+  show_crop_area: false

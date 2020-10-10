@@ -1,0 +1,30 @@
+<?php
+
+use Drupal\user\Entity\User;
+use Drupal\shortcut\Entity\Shortcut;
+/**
+ * @file
+ * Install, update and uninstall hooks for the editorial_workflow install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function SPHTechBlog_install() {
+  // First, do everything that is done in the standard profile.
+  include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+  standard_install();
+
+  // Set it as the admin theme
+  $config = \Drupal::service('config.factory')->getEditable('system.theme');
+  
+  $config->set('default', 'seven');
+  $config->set('admin', 'seven');
+  $config->save();
+
+
+}
